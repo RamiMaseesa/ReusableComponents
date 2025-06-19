@@ -1901,7 +1901,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.014190674, y: 0.0012952983}
+  m_Offset: {x: -0.01660633, y: -0.09774473}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1911,7 +1911,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.6554966, y: 0.9353668}
+  m_Size: {x: 0.5347161, y: 0.82424897}
   m_EdgeRadius: 0
 --- !u!114 &530998131
 MonoBehaviour:
@@ -2580,6 +2580,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 775647104}
   m_CullTransparentMesh: 1
+--- !u!1 &910443825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 910443826}
+  - component: {fileID: 910443827}
+  m_Layer: 0
+  m_Name: SpawnPickUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &910443826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910443825}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &910443827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910443825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ec93f75ba983a418963a75d51da5d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartPrefab: {fileID: 8339759253274343010, guid: 8c53ee5ded1b2ab41a7c21bd81cb14f9, type: 3}
+  shieldPrefab: {fileID: 2489025935123529269, guid: 2d9b8ea36b8ef9645becde947160548d, type: 3}
 --- !u!1 &985933165
 GameObject:
   m_ObjectHideFlags: 0
@@ -5849,6 +5895,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 5195995291811693812, guid: 3eae8daf731d9ff49a7c9520c9b9a414, type: 3}
   sawPrefab: {fileID: 6851727816646546804, guid: 0ad48b1b322bd4444ae6ba53ad67d224, type: 3}
+  spikePrefab: {fileID: 6196405756577764006, guid: ca0e84d279425464fb4424ab7c109e2e, type: 3}
+  firePrefab: {fileID: 8986995204424819666, guid: 6409f5754c6b2b44da160a29ca6e5c74, type: 3}
+  shadpwPrefab: {fileID: 4178013823513556634, guid: eeefd710047613c48ad07df4c9eba58a, type: 3}
 --- !u!1 &1485833528
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,4 +7758,5 @@ SceneRoots:
   - {fileID: 1332921999}
   - {fileID: 1196007847}
   - {fileID: 1485354769}
+  - {fileID: 910443826}
   - {fileID: 1276984273}

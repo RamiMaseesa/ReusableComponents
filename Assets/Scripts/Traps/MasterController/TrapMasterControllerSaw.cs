@@ -1,4 +1,5 @@
 using UnityEngine;
+using MyGame.Interfaces;
 
 public class TrapMasterControllerSaw : MonoBehaviour
 {

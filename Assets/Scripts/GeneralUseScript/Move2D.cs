@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class Move2D : MonoBehaviour, IMove {
 
     [SerializeField] private float speed;

@@ -8,6 +8,14 @@ public class SceneManager : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(newSceneIndex);
     }
 
+    public void GoToThisScene(int index) {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(index);
+    }
+
+    public void GoToThisScene(string name) {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(name);
+    }
+
     public void GoToMenu() {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }

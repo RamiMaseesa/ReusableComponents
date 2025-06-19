@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class RotateObj : MonoBehaviour, IRotation {
 
     public bool rotating = false;

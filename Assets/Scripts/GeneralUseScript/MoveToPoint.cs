@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class MoveToPoint : MonoBehaviour, IMoveTo 
 {
     [SerializeField] private float moveSpeed = 5f;

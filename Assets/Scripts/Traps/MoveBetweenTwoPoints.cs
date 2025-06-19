@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class MoveBetweenTwoPoints : MonoBehaviour, IMoveBetweenTwoVector2
 {
     [SerializeField] private float speed;
@@ -27,4 +27,5 @@ public class MoveBetweenTwoPoints : MonoBehaviour, IMoveBetweenTwoVector2
         rb.AddForce(direction * speed * (Time.deltaTime * 100), ForceMode2D.Force);
     }
 
+    public Vector2 ReturnActiveDir() => activePos;
 }

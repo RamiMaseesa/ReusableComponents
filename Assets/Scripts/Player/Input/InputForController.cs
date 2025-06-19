@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class InputForController : MonoBehaviour, IInput {
     public Vector2 GetInputDirection() {
 

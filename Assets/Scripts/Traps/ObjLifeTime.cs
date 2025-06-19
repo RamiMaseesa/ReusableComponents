@@ -1,6 +1,6 @@
 using UnityEngine;
-
-public class TrapLifeTime : MonoBehaviour, ILifeTime {
+using MyGame.Interfaces;
+public class ObjLifeTime : MonoBehaviour, ILifeTime {
 
     private float lifeTimeLeft;
 

@@ -1,6 +1,6 @@
 using UnityEngine;
-
-public class DirectionOfTrapSaw : MonoBehaviour, IDirection {
+using MyGame.Interfaces;
+public class RandomDirection : MonoBehaviour, IDirection {
     public Vector2 GenerateDirection() {
 
         Camera cam = Camera.main;

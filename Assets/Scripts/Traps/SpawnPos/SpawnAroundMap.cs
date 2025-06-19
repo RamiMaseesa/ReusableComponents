@@ -1,9 +1,9 @@
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class SpawnAroundMap : MonoBehaviour, ISpawn {
     [SerializeField] private float diameter = 25f;
 
-    public Vector2 SpawnTrap() {
+    public Vector2 SpawnObj() {
         float radius = diameter / 2f;
         Vector2 center = Vector2.zero;
 

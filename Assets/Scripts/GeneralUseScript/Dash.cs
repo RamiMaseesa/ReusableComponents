@@ -1,6 +1,5 @@
-using Unity.VisualScripting;
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class Dash : MonoBehaviour, IDash {
 
     [SerializeField] private float dashSpeed;

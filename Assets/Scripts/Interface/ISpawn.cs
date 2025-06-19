@@ -1,5 +1,6 @@
 using UnityEngine;
-
-public interface ISpawn {
-    Vector2 SpawnTrap();
+namespace MyGame.Interfaces {
+    public interface ISpawn {
+        Vector2 SpawnObj();
+    }
 }

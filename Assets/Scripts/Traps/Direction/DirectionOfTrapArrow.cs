@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class DirectionOfTrapArrow : MonoBehaviour, IDirection {
     [SerializeField] private float angleVariationDegrees = 10f; // maximum angle variation
 

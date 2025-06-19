@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class FlipObject : MonoBehaviour, IFlip {
     public void FlipThis(Vector2 direction) {
         if (direction.x < 0f) {

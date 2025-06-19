@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class AnimationForPlayer : MonoBehaviour, IAnimate {
 
     Animator animator => GetComponent<Animator>();

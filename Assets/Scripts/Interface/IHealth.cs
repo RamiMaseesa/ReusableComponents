@@ -1,10 +1,11 @@
-using UnityEngine;
+namespace MyGame.Interfaces {
+    public interface IHealth {
+        int Health { get; }
 
-public interface IHealth
-{
-    int Health { get; }
+        public void RemoveHealthPoints(int healthToRemove);
 
-    public void RemoveHealthPoints(int healthToRemove);
+        public void GenerateHearts();
 
-    public void GenerateHearts();
+        public void AddHealthPoint();
+    }
 }

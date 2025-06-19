@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using MyGame.Interfaces;
 public class PlayerMasterController : MonoBehaviour {
     public IInput input;
     private IMove move;
@@ -19,7 +19,7 @@ public class PlayerMasterController : MonoBehaviour {
         health = GetComponent<IHealth>();
 
         timer = FindFirstObjectByType<TimerComp>();
-        timer.StartTimer("dash", 0);
+        timer.StartTimer("dashPlayer", 0);
         health.GenerateHearts();
     }
 
@@ -35,10 +35,10 @@ public class PlayerMasterController : MonoBehaviour {
         animate.AnimationValues(direction);
 
         // dash
-        if (input.WantsToDash() && timer.TimerCheck("dash")) {
+        if (input.WantsToDash() && timer.TimerCheck("dashPlayer")) {
 
             dash.DashForward(direction);
-            timer.StartTimer("dash", 1);
+            timer.StartTimer("dashPlayer", 1);
         }
 
     }

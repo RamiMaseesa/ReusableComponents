@@ -1,6 +1,7 @@
 using UnityEngine;
-
-public interface IMoveTo{
-    void MoveToTarget(Vector2 target);
-    bool CheckIfOnTarget();
+namespace MyGame.Interfaces {
+    public interface IMoveTo {
+        void MoveToTarget(Vector2 target);
+        bool CheckIfOnTarget();
+    }
 }
