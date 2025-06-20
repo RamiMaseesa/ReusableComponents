@@ -16,7 +16,7 @@ public class TrapMasterControllerSaw : MonoBehaviour
 
         dir1 = direction.GenerateDirection();
         dir2 = direction.GenerateDirection();
-        lifeTime.SetLifeTime(60);
+        lifeTime.SetLifeTime(25);
         moveBetweenTwoVector2.SetStartingAndEndPos(dir1, dir2);
     }
 

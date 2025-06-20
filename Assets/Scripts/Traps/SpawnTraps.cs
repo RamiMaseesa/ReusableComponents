@@ -34,9 +34,9 @@ public class SpawnTraps : MonoBehaviour {
         float roll = Random.Range(0f, 100f);
         GameObject obj;
 
-        if (roll < 50f)
+        if (roll < 60f)
             obj = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
-        else if (roll < 75f)
+        else if (roll < 80f)
             obj = Instantiate(sawPrefab, transform.position, Quaternion.identity);
         else if (roll < 90f)
             obj = Instantiate(spikePrefab, transform.position, Quaternion.identity);
